@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Mika "-"</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sans-serif', Verdana,;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #4b95a2 100%);
+            color: rgb(21, 22, 36);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgb(1, 3, 0);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #0d1227;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section {
+            background: #f8f9fa;
+            padding: 80px 20px;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-wrapper video,
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .skills-section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1.1rem;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 60px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .about-section,
+            .skills-section {
+                margin: 40px auto;
+            }
+
+            .video-section,
+            .contact-section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="profile-container">
+            <img 
+                src="C:\Users\mhickaela\Documents\Clarina_WEB\.vscode\image.png"
+                alt="Your Name" 
+                class="profile-image"
+            >
+            <h1>Mhicka!</h1>
+            <p>20 Yrs. Old | From Tanza Cavite </p>
+            <p><em>- Be patient when becoming someone  you've never been before -</em></p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <h2 class="section-title"><em>About Me</em></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    My name is  <strong>Mhickaela Ashley M. Clarina, </strong>
+                        and I am currently a  <strong> third-year  Bachelor of Science in Information Technology (BSIT) student at STI College Rosario. </strong>
+                        I have a strong passion for learning and improving my skills in the field of technology. 
+                        As I continue my journey, I strive to grow both academically and personally.
+                    
+                </p>
+                <p>
+                    I love creating meaningful experiences, whether through my studies, projects, or personal life. 
+                    During my free time, I enjoy traveling as it allows me to relax, explore new places, and gain fresh perspectives. 
+                    These experiences inspire me to stay motivated and appreciate the journey I am taking.
+                </p>
+                <p>
+                    I hope that together with my friends and batchmates, we will successfully finish our studies and achieve our goals in life. 
+                    I am determined to complete my education and build a better future for myself. 
+                    In the future, I aspire to find a stable job where I can apply my knowledge and continue growing professionally.
+                </p>
+            </div>
+            <div>
+                <img 
+                    src="C:\Users\mhickaela\Documents\Clarina_WEB\photo_2026-03-20_16-53-40.jpg" 
+                    alt="About Me" 
+                    class="about-image"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="video-container">
+            <h2 class="section-title"><em>What I like to do in my free time</em></h2>
+            <div class="video-wrapper">
+                
+                <iframe
+                    src="C:\Users\mhickaela\Downloads\Telegram Desktop\video_2026-03-20_16-41-37.mp4"
+                    title="What I like to do in my free time"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2 class="section-title"><em>My Hobbies and Skills</em></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Cook</h3>
+                <p>I love cooking specially for my loved ones. One of my specialties is tofu sisig.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Instrument</h3>
+                <p>I enjoy playing musical instruments such as guitar and kalimba. I'm also learning to play the piano.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Craft</h3>
+                <p>I enjoy creating handmade items and working with various materials. I recently completed a project making custom boquets for my friends.</p>
+            </div>
+        </div>
+   
+</body>
+</html>
